@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/DriveEasy-App/',
+  base: process.env.NODE_ENV === 'production' ? '/DriveEasy-App/' : '/',
   plugins: [
     react(), tailwindcss()
   ],
