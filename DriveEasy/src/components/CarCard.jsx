@@ -3,7 +3,7 @@ export default function CarCard({ car, onBook, onCancel, bookingId }) {
     <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
       <div className="relative h-48 overflow-hidden">
         <img
-          src={`${import.meta.env.BASE_URL}${car.image.replace(/^\//, '')}`}
+          src={`${import.meta.env.BASE_URL}${car.image}`}
           alt={`${car.make} ${car.model}`}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-400"
         />
