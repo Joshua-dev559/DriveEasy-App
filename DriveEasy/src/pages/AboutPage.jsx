@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const team = [
-  { name: "Joshua", role: "CEO & Founder", avatar: "A", bio: "Passionate about making car rental effortless." },
+  { name: "Joshua", role: "CEO & Founder", avatar: "J", bio: "Passionate about making car rental effortless." },
   { name: "Maya",   role: "Head of Operations", avatar: "M", bio: "Logistics expert ensuring every rental runs like clockwork." },
   { name: "David",  role: "Lead Engineer", avatar: "D", bio: "Built the platform from scratch with a focus on speed and simplicity." },
 ];
