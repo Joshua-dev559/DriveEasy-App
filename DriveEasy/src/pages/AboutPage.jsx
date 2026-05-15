@@ -11,7 +11,7 @@ export default function AboutPage() {
     <div>
       {/* Hero */}
       <section className="bg-gray-900 py-20 px-4 text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/cars/bmw.jpg')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-[url('/DriveEasy-App/cars/bmw.jpg')] bg-cover bg-center opacity-10" />
         <div className="relative max-w-2xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
             About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">DriveEasy</span>
@@ -37,7 +37,7 @@ export default function AboutPage() {
               Explore Our Fleet →
             </Link>
           </div>
-          <img src="/cars/bmw.jpg" alt="Our fleet" className="rounded-2xl shadow-xl w-full object-cover h-72" />
+          <img src={`${import.meta.env.BASE_URL}cars/bmw.jpg`} alt="Our fleet" className="rounded-2xl shadow-xl w-full object-cover h-72" />
         </div>
       </section>
 

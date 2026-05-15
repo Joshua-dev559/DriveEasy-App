@@ -61,7 +61,7 @@ export default function FleetPage() {
     <div>
       {/* Hero */}
       <section className="bg-gray-900 py-16 px-4 text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/cars/bmw.jpg')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-[url('/DriveEasy-App/cars/bmw.jpg')] bg-cover bg-center opacity-10" />
         <div className="relative">
           <h1 className="text-4xl font-extrabold text-white mb-2">Our Fleet</h1>
           <p className="text-gray-400">{available} of {cars.length} cars available to book right now</p>

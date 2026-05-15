@@ -19,7 +19,7 @@ export default function HomePage() {
     <div>
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center bg-gray-900 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/cars/mustang.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/DriveEasy-App/cars/mustang.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative text-center px-4 max-w-3xl mx-auto">
           <span className="inline-block bg-blue-500/20 border border-blue-500/40 text-blue-300 text-xs font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide">
             🏆 #1 Rated Car Rental Service
