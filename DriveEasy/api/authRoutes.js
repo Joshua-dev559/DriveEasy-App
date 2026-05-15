@@ -46,7 +46,7 @@ router.get("/github/callback",
   (req, res) => {
     const token = issueToken(req.user);
     const user = encodeURIComponent(JSON.stringify({ id: req.user.id, name: req.user.name, email: req.user.email }));
-    res.redirect(`${process.env.CLIENT_URL}/#/auth/callback?token=${token}&user=${user}`);
+    res.redirect(`${process.env.CLIENT_URL}/DriveEasy-App/#/auth/callback?token=${token}&user=${user}`);
   }
 );
 
