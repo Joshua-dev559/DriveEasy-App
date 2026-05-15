@@ -2,6 +2,7 @@ const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { randomUUID } = require("crypto");
+const passport = require("passport");
 const db = require("./database");
 
 const router = express.Router();
@@ -37,5 +38,16 @@ router.post("/login", async (req, res) => {
 
   res.json({ token: issueToken(user), user: { id: user.id, name: user.name, email: user.email } });
 });
+
+router.get("/github", passport.authenticate("github", { scope: ["user:email"] }));
+
+router.get("/github/callback",
+  passport.authenticate("github", { failureRedirect: "/login" }),
+  (req, res) => {
+    const token = issueToken(req.user);
+    const user = encodeURIComponent(JSON.stringify({ id: req.user.id, name: req.user.name, email: req.user.email }));
+    res.redirect(`${process.env.CLIENT_URL}/#/auth/callback?token=${token}&user=${user}`);
+  }
+);
 
 module.exports = router;
