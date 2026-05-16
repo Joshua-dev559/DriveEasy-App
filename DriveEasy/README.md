@@ -1,18 +1,44 @@
-# React + Vite
+# DriveEasy_App
+DriveEasy is a React-based web application that simplifies the car rental process by connecting customers with available rental vehicles through a modern and user-friendly platform. Users can browse available cars, compare prices, book vehicles online, and manage reservations easily. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- Landing page with site overview
+- Car category list
+- Different car prices
+- Booking and cancelling option
+- Client-side routing
+- Semantic versioning — v1.0.0
 
-Currently, two official plugins are available:
+## Tech Stack
+- React 19 + Vite
+- React Router v6
+- JWT(JsonWebToken)
+- SQLite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Getting Started
 
-## React Compiler
+### 1. Install dependencies
+```bash
+npm install
+```
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### 2. Start the mock backend (port 5000)
+```bash
+npm run server
+```
 
-Note: This will impact Vite dev & build performances.
+### 3. Start the React dev server (port 5173)
+```bash
+npm run dev
+```
 
-## Expanding the ESLint configuration
+### 4. Run tests
+```bash
+npm test
+```
+## License
+This project is licensed under the MIT License
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Author
+Joshua Mbilli
+
